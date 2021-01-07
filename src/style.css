@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 55%;
+  justify-content: space-between;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  /*appearance: none;*/
+}
+form > div {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+form > div:first-child {
+  /* flex: 0 1 100%; */
+  width: 100%;
+}
+form > div {
+  /* flex: 1 0 40%; */
+  width: 49.5%;
+}
+label {
+  padding-right: 8px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.ButtonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button.AddExpense {
+  padding: 13px 15px;
+  appearance: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: #28a745;
+  margin-bottom: 30px;
+}
+button.AddExpense:hover {
+  background-color: #208537;
+}
+button.DeleteExpense {
+  border: 1px solid rgba(128, 128, 128);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 4px 8px;
+  transition: 0.1s;
+}
+button.DeleteExpense:hover {
+  color: whitesmoke;
+  background-color: #808080;
+}
+
+input:focus {
+  outline-color: rgba(58, 95, 205, 0.7);
+  outline-width: 10px;
+}
+/* button:focus {
+  outline-color: rgba(40, 167, 69, 0.2);
+} */
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+  margin-top: 30px;
+  font-weight: 100;
+  color: black;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #28a745;
+}
+
+table {
+  width: 55%;
+  border-collapse: collapse;
+}
+/* td:nth-child(-n + 3) {
+  width: 30%;
+} */
+td:nth-child(1) {
+  width: 30%;
+}
+td:nth-child(2) {
+  width: 30%;
+}
+td:nth-child(3) {
+  width: 24%;
+}
+td:nth-child(4) {
+  width: 15%;
+}
+tr:nth-child(1) {
+  font-weight: 600;
+}
+tr:nth-child(2n + 2) {
+  background-color: rgba(128, 128, 128, 0.1);
+}
+td {
+  border: 1px solid rgb(128, 128, 128, 0.2);
+  padding: 15px 10px;
+}
+@media (max-width: 1500px) {
+  form,
+  table {
+    width: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  form,
+  table {
+    width: 70%;
+  }
+}
+@media (max-width: 620px) {
+  form,
+  table {
+    width: 85%;
+  }
+}
